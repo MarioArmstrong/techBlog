@@ -1,0 +1,27 @@
+[
+    {
+        "comment": "nice dog",
+        "user_id": 1,
+        "post_id": 1
+    },
+    {
+        "comment": "stuff and things are great",
+        "user_id": 2,
+        "post_id": 2
+    },
+    {
+        "comment": "blahblahblah",
+        "user_id": 3,
+        "post_id": 3
+    },
+    {
+        "comment": "more blahblah blah",
+        "user_id": 4,
+        "post_id": 4
+    },
+    {
+        "comment": "yadayadayada",
+        "user_id": 5,
+        "post_id": 5
+    }
+]

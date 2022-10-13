@@ -7,16 +7,17 @@ class Posts extends Model {}
 Posts.init(
   {
     id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
     post_comment: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     user_id: {
+      type: DataTypes.INTEGER,
       references: {
         model: User,
         key: "id",

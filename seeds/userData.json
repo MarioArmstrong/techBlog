@@ -1,0 +1,17 @@
+[
+    {
+        "user_name": "bob",
+        "user_email": "bob@bob.com",
+        "user_password": "bobalicious"
+    },
+    {
+        "user_name": "jon",
+        "user_email": "j@j.com",
+        "user_password": "jay123456"
+    },
+    {
+        "user_name": "joe",
+        "user_email": "joe@bob.com",
+        "user_password": "joejoejoe"
+    }
+]

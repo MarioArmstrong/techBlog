@@ -1,0 +1,22 @@
+[
+    {
+        "post_comment": "hello",
+        "user_id": 1
+    },
+    {
+        "post_comment": "stuff",
+        "user_id": 2
+    },
+    {
+        "post_comment": "more thigns",
+        "user_id": 3
+    },
+    {
+        "post_comment": "even more things",
+        "user_id": 4
+    },
+    {
+        "post_comment": "and more",
+        "user_id": 5
+    }
+]
