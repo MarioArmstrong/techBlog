@@ -1,21 +1,26 @@
 [
     {
+        "post_title": "How to make money",
         "post_comment": "hello",
         "user_id": 1
     },
     {
+        "post_title": "How to do stuff",
         "post_comment": "stuff",
         "user_id": 2
     },
     {
+        "post_title": "How to something...",
         "post_comment": "more thigns",
         "user_id": 3
     },
     {
+        "post_title": "How to blah",
         "post_comment": "even more things",
         "user_id": 4
     },
     {
+        "post_title": "Awesome stuff",
         "post_comment": "and more",
         "user_id": 5
     }

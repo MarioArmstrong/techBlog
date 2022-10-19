@@ -1,6 +1,9 @@
+{{#if logged_in}}
 {{#each posts as |post|}}
-  <h1>hello, {{post.user}}</h1>
-  {{>name}}
+{{log post}}
+  {{>post}}
 {{/each}}
-
+{{else}}
+  <a href="/signup">Sign Up!</a>
+{{/if}}
 {{!-- {{log this}} --}}

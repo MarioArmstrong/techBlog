@@ -12,6 +12,10 @@ Posts.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    post_title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     post_comment: {
       type: DataTypes.STRING,
       allowNull: true,
