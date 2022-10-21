@@ -15,14 +15,25 @@
     <title>techBlog</title>
   </head>
   <body>
-    <header>
-
+    <header class="bg-dark text-light">
+      <ul class="nav nav-pills d-flex justify-content-start">
+        <li><button
+            class="nav-item btn btn-default navbar-btn btn-outline-light"
+          >Home</button></li>
+        <li><button
+            class="nav-item btn btn-default navbar-btn btn-outline-light"
+          >Dashboard</button></li>
+        <li><button
+            class="nav-item btn btn-default navbar-btn btn-outline-light"
+          >Logout</button></li>
+      </ul>
+      <h1 class="d-flex justify-content-center pb-4">techBlog</h1>
     </header>
     <main>
       {{{body}}}
     </main>
-    <footer>
-
+    <footer class="position relative">
+      <h5 class="postion-absolute bottom-0 end-0">Copyright</h5>
     </footer>
   </body>
 </html>

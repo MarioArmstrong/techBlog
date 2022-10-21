@@ -4,6 +4,13 @@
   {{>post}}
 {{/each}}
 {{else}}
-  <a href="/signup">Sign Up!</a>
+<div class="row justify-content-center">
+  <section class="card w-25 p-3 text-bg-warning">
+    <div class="card-body text-center">
+      <h3 class="card-title text-dark">Sign Up Now!</h3>
+        <p class="card-text text-dark">In order to see the contents of this page you need to sign up first. Please click this <span><a class="card-link link-light" href="/signup">link</a></span> to be be redirected to our sign up form</p>
+    </div>
+  </section>
+</div>
 {{/if}}
 {{!-- {{log this}} --}}
