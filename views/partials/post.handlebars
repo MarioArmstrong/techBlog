@@ -1,12 +1,15 @@
 <section class="container">
   <div class="row">
     <div class="col">
+      <img
+        src="/public/images/User_Avatar.png"
+        alt="generic avatar thumbnail image"
+        class="img-thumbnail"
+      />
+      <h6>{{user.user_name}}</h6>
       <h2>{{post_title}}</h2>
       <p>{{post_comment}}</p>
-      <p>{{date_created}}</p>
-    </div>
-    <div class="col">
-      <h6>{{user.user_name}}</h6>
+      <p>{{format_date date_created}}</p>
     </div>
   </div>
 </section>
