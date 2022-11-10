@@ -7,7 +7,7 @@ const createPostHandler = async (event) => {
   if (title && comment) {
     const response = await fetch("/api/posts", {
       method: "POST",
-      body: JSON.stringify({ title, comment }),
+      body: JSON.stringify({ post_title: title, post_comment: comment }),
       headers: { "Content-Type": "application/json" },
     });
 

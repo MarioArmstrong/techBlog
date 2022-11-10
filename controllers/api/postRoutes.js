@@ -17,6 +17,7 @@ router.post("/", async (req, res) => {
     const postData = await Posts.create(req.body);
     res.status(200).json(postData);
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });

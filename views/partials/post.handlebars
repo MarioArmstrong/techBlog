@@ -1,7 +1,12 @@
-<section class="card">
+<section class="container">
   <div class="row">
-    <h2>{{post_title}}</h2>
-    <h3>{{post_comment}}</h3>
-    <h4>{{user.user_name}}</h4>
+    <div class="col">
+      <h2>{{post_title}}</h2>
+      <p>{{post_comment}}</p>
+      <p>{{date_created}}</p>
+    </div>
+    <div class="col">
+      <h6>{{user.user_name}}</h6>
+    </div>
   </div>
 </section>

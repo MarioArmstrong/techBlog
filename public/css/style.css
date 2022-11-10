@@ -14,3 +14,17 @@
 textarea {
   resize: none;
 }
+#mainContent {
+  position: relative;
+  min-height: 11vh;
+}
+
+#content-wrap {
+  padding-bottom: 4rem;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+}

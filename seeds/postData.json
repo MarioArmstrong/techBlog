@@ -2,26 +2,31 @@
     {
         "post_title": "How to make money",
         "post_comment": "hello",
-        "user_id": 1
+        "user_id": 1,
+        "date_created": "November 9, 2022"
     },
     {
         "post_title": "How to do stuff",
         "post_comment": "stuff",
-        "user_id": 2
+        "user_id": 2,
+        "date_created": "September 2, 2022"
     },
     {
         "post_title": "How to something...",
         "post_comment": "more thigns",
-        "user_id": 3
+        "user_id": 3,
+        "date_created": "January 3, 2001"
     },
     {
         "post_title": "How to blah",
         "post_comment": "even more things",
-        "user_id": 4
+        "user_id": 4,
+        "date_created": "May 5, 2010"
     },
     {
         "post_title": "Awesome stuff",
         "post_comment": "and more",
-        "user_id": 5
+        "user_id": 5,
+        "date_created": "December 22, 1999"
     }
 ]
