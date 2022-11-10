@@ -1,12 +1,16 @@
-/* .nav-pills > li > a.active {
-  background-color: #ffffff !important;
-  color: #ffffff !important;
+.formBG {
+  background-color: #9fb5a8;
 }
 
-.nav-pills > li > a:hover {
-  color: #ffffff !important;
+.containerSize {
+  max-width: fit-content;
 }
 
-.nav-link-color {
-  color: #ffffff;
-} */
+.noLines {
+  text-decoration: none;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}

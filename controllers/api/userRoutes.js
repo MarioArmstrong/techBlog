@@ -14,7 +14,11 @@ router.get("/", async (req, res) => {
 //POST - CREATE User
 router.post("/", async (req, res) => {
   try {
-    const userData = await User.create(req.body);
+    const userData = await User.create({
+      user_name: req.body.name,
+      user_email: req.body.email,
+      user_password: req.body.password,
+    });
 
     req.session.save(() => {
       req.session.user_id = userData.id;
@@ -27,8 +31,8 @@ router.post("/", async (req, res) => {
   }
 });
 
-//GET login User
-router.get("/login", async (req, res) => {
+//POST login User
+router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({
       where: { user_email: req.body.email },
@@ -61,8 +65,8 @@ router.get("/login", async (req, res) => {
   }
 });
 
-//GET logout User
-router.get("/logout", (req, res) => {
+//POST logout User
+router.post("/logout", (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(200).json({ message: "You have logged out!" });

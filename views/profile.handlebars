@@ -1,0 +1,34 @@
+<div class="container d-flex justify-content-center">
+  <div class="row">
+    <h2>Create a Post</h2>
+    <form id="postForm">
+      <div class="form-group pb-1">
+        <textarea
+          id="postTitle"
+          placeholder="title"
+          type="text"
+          class="form-control"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <textarea
+          id="postComment"
+          class="form-control"
+          placeholder="what's on your mind?"
+        ></textarea>
+      </div>
+      <div class="form-group pt-1">
+        <button id="postBtn" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+</div>
+{{#if posts.length}}
+  <div>
+    <h3>My Posts:</h3>
+    {{#each posts as |post|}}{{/each}}
+  </div>
+{{/if}}
+<script src="./js/createPosts.js"></script>
+<script src="./js/updatePosts.js"></script>
+<script src="./js/deletePosts.js"></script>

@@ -15,25 +15,39 @@
     <title>techBlog</title>
   </head>
   <body>
-    <header class="bg-dark text-light">
-      <ul class="nav nav-pills d-flex justify-content-start">
-        <li><button
-            class="nav-item btn btn-default navbar-btn btn-outline-light"
-          >Home</button></li>
-        <li><button
-            class="nav-item btn btn-default navbar-btn btn-outline-light"
-          >Dashboard</button></li>
-        <li><button
-            class="nav-item btn btn-default navbar-btn btn-outline-light"
-          >Logout</button></li>
+    <header class="bg-dark text-light flex-container">
+      <ul class="nav nav-pills">
+        <div class="row">
+          <li class="col-sm"><button
+              class="nav-item btn btn-default navbar-btn btn-outline-light"
+            ><a href="/" class="noLines">Home</a></button></li>
+          {{#if logged_in}}
+            <li class="col-sm"><button
+                class="nav-item btn btn-default navbar-btn btn-outline-light"
+              ><a href="/profile" class="noLines">Profile</a></button></li>
+            <li class="col-sm"><button
+                class="nav-item btn btn-default navbar-btn btn-outline-light"
+                id="logout"
+              >Logout</button></li>
+          {{else}}
+            <li class="col-sm"><button
+                class="nav-item btn btn-default navbar-btn btn-outline-light"
+              ><a href="/login" class="noLines">Login</a></button></li>
+          {{/if}}
+          {{! <h1 class="col">techBlog</h1> }}
+        </div>
       </ul>
       <h1 class="d-flex justify-content-center pb-4">techBlog</h1>
     </header>
     <main>
       {{{body}}}
     </main>
-    <footer class="position relative">
-      <h5 class="postion-absolute bottom-0 end-0">Copyright</h5>
+    <footer class="bg-secondary text-white text-center fixed-bottom">
+      <h6 class="">
+        &copy;Copyright 2022 by Mario Armstrong. All Rights Reserved.</h6>
     </footer>
+    {{#if logged_in}}
+      <script src="./js/logout.js"></script>
+    {{/if}}
   </body>
 </html>

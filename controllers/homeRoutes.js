@@ -14,7 +14,6 @@ router.get("/", async (req, res) => {
         },
       ],
     });
-
     //serializing data
     const posts = postsData.map((post) => post.get({ plain: true }));
 
