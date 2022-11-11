@@ -1,16 +1,16 @@
 [
     {
-        "user_name": "bob",
+        "user_name": "Bob",
         "user_email": "bob@bob.com",
         "user_password": "bobalicious"
     },
     {
-        "user_name": "jon",
-        "user_email": "j@j.com",
-        "user_password": "jay123456"
+        "user_name": "Hector",
+        "user_email": "h@h.com",
+        "user_password": "h123456"
     },
     {
-        "user_name": "joe",
+        "user_name": "Joe",
         "user_email": "joe@bob.com",
         "user_password": "joejoejoe"
     }

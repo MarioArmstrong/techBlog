@@ -3,24 +3,21 @@
 const deletePostHandler = async (event) => {
   event.preventDefault();
 
-  const title = document.querySelector("#postTitle").value.trim();
-  const comment = document.querySelector("#postComment").value.trim();
-
-  if (title && comment) {
-    const response = await fetch("/api/posts", {
+  const id = event.target.getAttribute("data-id");
+  if (event.target.hasAttribute("data-id")) {
+    const response = await fetch(`/api/posts/${id}`, {
       method: "DELETE",
-      body: JSON.stringify({ post_title: title, post_comment: comment }),
       headers: { "Content-Type": "application/json" },
     });
 
     if (response.ok) {
-      document.location.replace("/profile");
+      document.location.reload();
     } else {
-      alert("Failed to create post");
+      alert("Failed to delete post");
     }
   }
 };
 
 document
-  .getElementById("deleteBtn")
+  .getElementsByClassName("deleteBtn")
   .addEventListener("click", deletePostHandler);

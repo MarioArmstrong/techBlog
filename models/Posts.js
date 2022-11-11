@@ -32,6 +32,14 @@ Posts.init(
         key: "id",
         unique: false,
       },
+      //WHY DOESN'T THIS WORK?
+      //   user_name: {
+      //     type: DataTypes.STRING,
+      //     references: {
+      //       model: User,
+      //       key: "user_name",
+      //       unique: false,
+      //     }
     },
   },
   {

@@ -1,15 +1,21 @@
-<section class="container">
-  <div class="row">
-    <div class="col">
-      <img
-        src="/public/images/User_Avatar.png"
+<div class="d-flex justify-content-center pb-2">
+  <section class="card w-25">
+    <div class="">
+      {{! <img
+        src="../../public/images/User_Avatar.png"
         alt="generic avatar thumbnail image"
         class="img-thumbnail"
-      />
-      <h6>{{user.user_name}}</h6>
-      <h2>{{post_title}}</h2>
-      <p>{{post_comment}}</p>
-      <p>{{format_date date_created}}</p>
+      /> }}
+      <h2 class="card-title">{{post_title}}</h2>
+      <p class="card-text text-center">{{post_comment}}</p>
+      {{!-- <h6 class="card-subtitle text-end">{{user_id}}</h6> --}}
+      <p class="text-end">{{format_date date_created}}</p>
+      {{#if_equals loggedInUID user_id}}
+        <button
+          data-id="{{id}}"
+          class="deleteBtn btn btn-primary"
+        >Delete</button>
+      {{/if_equals}}
     </div>
-  </div>
-</section>
+  </section>
+</div>

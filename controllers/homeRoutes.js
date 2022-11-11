@@ -20,6 +20,7 @@ router.get("/", async (req, res) => {
     res.render("homepage", {
       posts, //this is an array
       logged_in: req.session.logged_in,
+      loggedInUID: req.session.user_id,
     });
   } catch (err) {
     res.status(500).json(err);
